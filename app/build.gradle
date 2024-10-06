@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "29.0.2"
+    namespace "com.hzy.chinese.jchess"
+    defaultConfig {
+        applicationId "com.hzy.chinese.jchess"
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionCode 2
+        versionName "1.0.1"
+
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    testCompile 'junit:junit:4.12'
+
+    implementation 'com.android.support:appcompat-v7:25.3.1'
+    implementation 'com.android.support:design:25.3.1'
+    implementation 'com.blankj:utilcode:1.13.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+}
